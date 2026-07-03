@@ -16,6 +16,74 @@
 
 
     <style>
+     /* Vision & Mission Layout */
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+     
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 5px solid #0056b3;
+}
+
+.info-box h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.info-box p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #555;
+    margin: 0;
+}
+     /* Curriculum Box & Button Layout */
+.curriculum-cta {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.curriculum-cta p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.btn-curriculum {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0056b3;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 86, 179, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-curriculum:hover {
+    background-color: #003d82;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px rgba(0, 86, 179, 0.3);
+}
+
+
 
         body {
 
@@ -152,6 +220,26 @@
 
 
     <div class="container">
+     <!-- Vision & Mission Section -->
+<div class="vision-mission-grid">
+    <div class="info-box">
+        <h3>Our Vision</h3>
+        <p>မြန်မာလူငယ်များ ကမ္ဘာ့အဆင့်မီ နည်းပညာနှင့် ဘာသာစကား အရည်အသွေးများ အခမဲ့ ဆည်းပူးခွင့်ရရှိပြီး နိုင်ငံတကာတွင် ရင်ဘောင်တန်းနိုင်စေရန်။</p>
+    </div>
+    <div class="info-box">
+        <h3>Our Mission</h3>
+        <p>OSSU နှင့် UoPeople စံနှုန်းမီ Computer Science သင်ရိုးများကို English for Tech နှင့် တွဲဖက်ကာ စနစ်တကျ ပြုစုပျိုးထောင်ပေးရန်။</p>
+    </div>
+</div>
+<!-- Curriculum Button Section -->
+<div class="curriculum-cta">
+    <p>UoPeople, MIT, Stanford နှင့် Princeton စသည့် ကမ္ဘာ့ထိပ်တန်း တက္ကသိုလ်ကြီးများ၏ သင်ရိုးစံနှုန်းများကို အခြေခံထားသော ကျွန်ုပ်တို့၏ ၄ နှစ်စာ Hybrid Curriculum အသေးစိတ်ကို အောက်ပါခလုတ်တွင် ကြည့်ရှုနိုင်ပါသည်။</p>
+    <!-- GitHub ပေါ်ရှိ PDF ကို တိုက်ရိုက်ချိတ်ထားပါသည် -->
+    <a href="curriculum_tracker 2.pdf" class="btn-curriculum" target="_blank">
+        Curriculum အပြည့်အစုံကို ကြည့်ရန် (PDF)
+    </a>
+</div>
+
 
         <div id="cs" class="card">
 
