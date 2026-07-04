@@ -16,6 +16,53 @@
 
 
     <style>
+        /* Ambassador Badge Box Styles */
+.ambassador-badge-box {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #fffdf0 0%, #fffbeb 100%);
+    border: 1px solid #fde68a;
+    border-left: 6px solid #d97706; /* ရွှေဝါရောင်လိုင်း */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(217, 119, 6, 0.05);
+}
+
+.badge-icon {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.badge-text h4 {
+    color: #b45309;
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-text p {
+    color: #451a03;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ဖုန်းနဲ့ကြည့်ရင် Icon နဲ့ စာသား အဆင်ပြေအောင် ချိန်ညှိခြင်း */
+@media (max-width: 600px) {
+    .ambassador-badge-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .badge-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
     /* Vision & Mission Layout */
 .vision-mission-grid {
     display: grid;
@@ -228,6 +275,21 @@
 
     </nav>
 
+<div class="container">
+    <!-- 🎓 UoPeople Student Ambassador Badge Box -->
+    <div class="ambassador-badge-box">
+        <div class="badge-icon">🎓</div>
+        <div class="badge-text">
+            <h4>Led by a University of the People Student Ambassador</h4>
+            <p>ဤ Technology & Knowledge Hub အား ကမ္ဘာ့ပထမဆုံး အခမဲ့အွန်လိုင်းတက္ကသိုလ်ဖြစ်သော UoPeople ရဲ့ တရားဝင် Student Ambassador ကိုယ်တိုင် ဦးဆောင်၍ နိုင်ငံတကာစံနှုန်းမီ သင်ရိုးညွှန်းတမ်းများဖြင့် စနစ်တကျ လမ်းညွှန်သင်ကြားပေးနေခြင်း ဖြစ်ပါသည်။</p>
+        </div>
+    </div>
+    
+    <!-- အောက်ကတော့ အရှေ့မှာ ထည့်ခဲ့တဲ့ Vision & Mission Section ဆက်သွားပါမယ် -->
+    <div class="vision-mission-grid">
+        ...
+    </div>
+</div>
 
 
     <div class="container">
